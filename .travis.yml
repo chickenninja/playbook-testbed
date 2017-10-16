@@ -2,8 +2,8 @@ language: node_js
 sudo: enabled
 before_install:
   - sudo apt-get install -y curl docker ansible unzip
-  - curl -L https://releases.hashicorp.com/packer/1.1.1/packer_1.1.1_linux_amd64.zip -o /tmp/packer
-  - cd /tmp && unzip packer
+  - curl -L https://releases.hashicorp.com/packer/1.1.1/packer_1.1.1_linux_amd64.zip -o /tmp/packer-dl
+  - cd /tmp && unzip packer-dl -d packer
 
 install:
   - /tmp/packer/packer build packer.json
