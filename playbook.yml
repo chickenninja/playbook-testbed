@@ -1,0 +1,9 @@
+---
+- name: do something
+  hosts: all
+  tasks:
+  - name: update sources
+    shell: apt-get update
+  
+  - name: say hello
+    shell: echo "hello"
