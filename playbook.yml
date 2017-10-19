@@ -3,7 +3,7 @@
   hosts: all
   tasks:
   - name: update sources
-    shell: apt-get update
+    shell: apt-get update && touch /tmp/test
   
   - name: say hello
     shell: echo "hello"
