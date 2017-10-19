@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get install -y ansible
 
 install:
-  - ansible-playbook playbook.yml --connection=local
+  - ansible-playbook playbook.yml --connection=local --inventory-file test-inventory
 
 script:
   - echo "Success"

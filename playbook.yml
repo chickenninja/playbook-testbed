@@ -1,6 +1,6 @@
 ---
 - name: do something
-  hosts: localhost
+  hosts: hello
   tasks:
   - name: make a change
     shell: touch /tmp/test
