@@ -1,9 +1,9 @@
 ---
 - name: do something
-  hosts: all
+  hosts: localhost
   tasks:
-  - name: update sources
-    shell: apt-get update && touch /tmp/test
+  - name: make a change
+    shell: touch /tmp/test
   
   - name: say hello
     shell: echo "hello"
